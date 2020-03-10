@@ -5,10 +5,10 @@ RUN apt-get install -y wget
 
 RUN cd /
 
-RUN wget http://apache.stu.edu.tw/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz
+RUN wget http://ftp.mirror.tw/pub/apache/tomcat/tomcat-8/v8.5.51/bin/apache-tomcat-8.5.51.tar.gz
 
-RUN tar zxvf apache-tomcat-7.0.82.tar.gz
+RUN tar zxvf apache-tomcat-8.5.51.tar.gz
 
-CMD ["/apache-tomcat-7.0.82/bin/catalina.sh", "run"]
+CMD ["/apache-tomcat-8.5.51/bin/catalina.sh", "run"]
 
 EXPOSE 8080
